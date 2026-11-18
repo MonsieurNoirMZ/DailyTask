@@ -1,0 +1,156 @@
+======================================================================
+  17_1: COMPILER, INTERPRETER & JAVASCRIPT ENGINE
+======================================================================
+
+* Compiler:
+  Translates the entire source code into machine code all at once before execution.
+  - Pros: Fast execution, better optimization, creates standalone executable files.
+
+* Interpreter:
+  Translates and executes source code line by line.
+  - Pros: Easy debugging, instant execution, great for development and testing.
+
+* JavaScript (Hybrid Approach): 
+  Uses V8 Engine (Google’s JS engine), which combines an interpreter for fast startup with a JIT (Just-In-Time) compiler to optimize frequently used code ("hot code") into machine code on the fly.
+
+* What JavaScript Can Do:
+  - Dynamically update content (modify DOM at runtime without reloading pages, e.g., live feeds, notifications).
+  - Control multimedia and render animations/effects.
+  - Form validation and interactive UI components (dropdowns, modals).
+  - Fetch data asynchronously (e.g., via fetch API).
+
+
+
+======================================================================
+  MATH NEEDED FOR PROGRAMMING
+======================================================================
+
+1. Numbers: 
+   Positive, negative, zero (50, -9, 0).
+
+2. Integers & Odd/Even: 
+   Whole numbers and their parity (2, 897).
+
+3. Floats: 
+   Decimals (5.6, 2.2).
+
+4. Basic Operations: 
+   +, -, *, /.
+
+5. Advanced/Other: 
+   Modulus (%), percentages, sums, averages, min/max, series, and geometry (areas like triangles).
+
+
+
+======================================================================
+  17_3: VARIABLES
+======================================================================
+
+* Definition: 
+  A variable is a container to store data (vary + able).
+
+* 5 Key Elements to Declare: 
+  Keyword (var), variable name, assignment operator (=), value, and semicolon (;).
+
+* Key Rules:
+  - Unassigned variables return undefined.
+  - Values can be reassigned dynamically over time.
+
+* Example:
+  var weight = 38;
+  var money = 2005;
+  money = 500; // Value updated
+  var age;     // Value is undefined
+
+
+
+======================================================================
+  17_5: DATA TYPES
+======================================================================
+
+* String: 
+  Text enclosed in quotes ("Sadar Uddin", 'Bangladesh').
+
+* Boolean: 
+  True or false flags (true, false).
+
+* Number: 
+  Integers or decimals (555).
+
+* Checking Types: 
+  Use the typeof operator (typeof passed, typeof country).
+
+
+
+======================================================================
+  17_6: VARIABLE NAMING RULES
+======================================================================
+
+1. No Keywords: 
+   Cannot use reserved words (e.g., var false, var var).
+
+2. No Spaces: 
+   Use camelCase or snake_case instead of gaps (e.g., use isHappy instead of is happy).
+
+3. No Quotes: 
+   Names cannot be wrapped in quotes (e.g., var "address" is invalid).
+
+4. No Leading Numbers: 
+   Cannot start with a digit (e.g., 3money is invalid, but money3 is valid).
+
+5. Case Sensitive: 
+   address, Address, and ADDRESS are completely different variables.
+
+6. Naming Conventions:
+   - Snake case  : my_current_home_address
+   - Camel case  : myCurrentHomeAddress (Recommended for JS)
+   - Pascal case : MyCurrentHomeAddress
+
+
+
+======================================================================
+  17_7: TYPE CONVERSION & NUMBERS
+======================================================================
+
+* Parsing Numbers: 
+  - parseInt('22.5')   -> 22   (Integer)
+  - parseFloat('22.5') -> 22.5 (Float)
+
+* Decimal Precision: 
+  num.toFixed(1) formats decimals, but note that .toFixed() and .toPrecision() ALWAYS return strings.
+
+* Infinity: 
+  Dividing a negative number by zero returns -Infinity (-50 / 0).
+
+
+
+======================================================================
+  17_8: SHORTHAND OPERATORS
+======================================================================
+
+Shorthand syntax updates variable values efficiently:
+
+* price += 10;       ->   price = price + 10;
+* fridge -= 1000;    ->   fridge = fridge - 1000;
+* orangePrice *= 3;  ->   orangePrice = orangePrice * 3;
+
+
+
+======================================================================
+  17_9: isNaN() FUNCTION
+======================================================================
+
+* Definition: 
+  A built-in JavaScript function that checks if a value is NaN ("Not-a-Number").
+
+* Return Values:
+  - true  -> If the value is NaN, or cannot be converted to a number.
+  - false -> If the value is a valid number (or can be successfully converted).
+
+* Examples:
+  - isNaN(NaN);       -> true
+  - isNaN("hello");   -> true  (cannot be converted)
+  - isNaN("123");     -> false (converts to number 123)
+  - isNaN(123);       -> false
+  - isNaN(true);      -> false (converts to 1)
+  - isNaN(undefined); -> true  (converts to NaN)
